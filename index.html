@@ -6,28 +6,51 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
- 
-  <div id="header">
-    <h1 id="team-name">American club basketball</h1>
-    <p id="team-subtitle">Player Chemistry Network</p>
-  </div>
 
-  <div id="network">
-    <h2>Assist Network</h2>
-   
-  </div>
+  <header id="header">
+    <h1>American Club Basketball</h1>
+    <p>2025 / 2026 Winter Season — Player Chemistry Directed Graph</p>
+  </header>
 
-  <div id="stats">
-    <h2>Season Stats</h2>
- 
-  </div>
+  <main id="main">
 
-  <div id="footer">
-    <p>American club basketball — 2025/2026 winter Season</p>
-  </div>
+    <div id="network">
+      <h2>Assist Network</h2>
+    </div>
+
+    <aside id="sidebar">
+      <div class="sidebar-section">
+        <h3>Filters</h3>
+        <label>Sort By</label>
+        <select id="sort-select">
+          <option value="all">All</option>
+          <option value="best">Best Chemistry</option>
+          <option value="worst">Worst Chemistry</option>
+        </select>
+      </div>
+
+      <div class="sidebar-section" id="player-profile">
+        <h3>Player Profile</h3>
+        <p class="placeholder">Click a node to see stats</p>
+        <div id="profile-content" class="hidden">
+          <p id="profile-name"></p>
+          <p id="profile-ppg"></p>
+          <p id="profile-rpg"></p>
+          <p id="profile-apg"></p>
+          <p id="profile-games"></p>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer id="footer">
+    <p>American Club Basketball — 2025/2026 Winter Season &nbsp;|&nbsp; Built with <a href="https://d3js.org" target="_blank">D3.js v7</a></p>
+  </footer>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="js/main.js"></script>
-  
+  <script src="js/network.js"></script>
+  <script src="js/load-data.js"></script>
+
 </body>
 </html>

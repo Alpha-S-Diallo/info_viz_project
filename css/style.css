@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #141414;
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+#header {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 20px 32px;
+  border-bottom: 3px solid #e8710a;
+}
+
+#header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#header p {
+  font-size: 0.85rem;
+  color: #9aa3b0;
+  margin-top: 4px;
+}
+
+/* main layout — graph left, sidebar right */
+#main {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+/* network graph panel */
+#network {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+#network h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e8710a;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+}
+
+#network svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* sidebar */
+#sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-section {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.sidebar-section h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e8710a;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #9aa3b0;
+  margin-bottom: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #f0f0f0;
+  background: #2a2a2a;
+  cursor: pointer;
+}
+
+/* player profile */
+.placeholder {
+  font-size: 0.8rem;
+  color: #555;
+  font-style: italic;
+}
+
+#profile-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+#profile-content p:not(#profile-name) {
+  font-size: 0.85rem;
+  color: #9aa3b0;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  background: #2a2a2a;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* footer */
+#footer {
+  background: #1e1e1e;
+  color: #555;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.75rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+#footer a {
+  color: #e8710a;
+  text-decoration: none;
+}
+
+/* network node labels */
+.network-label {
+  fill: #f0f0f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 500;
+  paint-order: stroke fill;
+  stroke: #1e1e1e;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
